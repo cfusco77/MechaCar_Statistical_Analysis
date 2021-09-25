@@ -1,5 +1,5 @@
 # MechaCar_Statistical_Analysis
-Deliverable 1: Linear Regression to Predict MPG
+## Linear Regression to Predict MPG
 
 Ho : The slope of the linear model is zero, or m = 0
 
