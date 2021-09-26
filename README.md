@@ -27,13 +27,13 @@ The r-squared (r2) value is also known as the coefficient of determination and r
 From our linear regression model, the r-squared value is 0.71, which means that roughly 71% of the variablilty of our dependent variable (MPG) is explained using this linear model. While this linear regression does a fairly good job of predicting mpg of MechaCar prototypes we may consider introducing additional variables to refine our model further. 
 
 ## Summary Statistics on Suspension Coils
-In this dataset, the weight capacities of multiple suspension coils were tested to determine if the manufacturing process is consistent across production lots. The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Based on the total_summary statistics, MechaCart is in compliance with suspension coil manufactoring guidlines. The overall variance is 62.3, far below 100. However, when we look at the manufactoring statistics by Lot, we see Lot 3 is responsible for most of the variance in the overall summary. Lot 3 is sitting above regulation with a variance of 170. MechaCar should investigate the manufactoring practices of Lot 3 to see if they can identify why this lot is performing so differently from Lots 1 & 2. 
+In this dataset, the weight capacities of multiple suspension coils were tested to determine if the manufacturing process is consistent across production lots. The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Based on the total_summary statistics, MechaCar is in compliance with suspension coil manufactoring guidlines. The overall variance is 62.3, far below 100. However, when we look at the manufactoring statistics by Lot, we see Lot 3 is responsible for most of the variance in the overall summary. Lot 3 is sitting above regulation with a variance of 170. MechaCar should investigate the manufactoring practices of Lot 3 to see if they can identify why this lot is performing so differently from Lots 1 & 2. 
 
 ![Total_Summary](https://github.com/cfusco77/MechaCar_Statistical_Analysis/blob/main/Resources/total_summary.png) 
 ![Lots_summary](https://github.com/cfusco77/MechaCar_Statistical_Analysis/blob/main/Resources/lot_summary.png) 
 
 ## T-Tests on Suspension Coils
-Next we performed  t-tests to determine if all manufacturing lots and each lot individually are statistically different from the population mean of 1,500 pounds per square inch.
+Next we performed t-tests to determine if all manufacturing lots and each lot individually are statistically different from the population mean of 1,500 pounds per square inch.
 
 Ho : There is no statistical difference between the observed sample mean and its presumed population mean.
 Ha : There is a statistical difference between the observed sample mean and its presumed population mean.
@@ -69,4 +69,4 @@ Before we can perform our chi-squared analysis, we must ensure that our dataset 
 3. There is a minimum of five observed instances for every unique value for a 2x2 chi-squared table.
 4. For a larger chi-squared table, there is at least one observation for every unique value and at least 80% of all unique values have five or more observations.
 
-Running rhe chi-squared test will result in a p-value that may or may not allow us to reject the null hypothesis. If we were to uncover that their is a statitsitically signifcant frequency distrubution betwen both groups I may reccomend expanding this analysis to control for vehicle type. Some vehicle types might be more hazardous than others and be skewing our results. 
+Running the chi-squared test will result in a p-value that may or may not allow us to reject the null hypothesis. If we were to uncover that their is a statitsitically signifcant frequency distrubution between both groups I may reccommend expanding this analysis to control for other factors. There may be additional vehicle characteristics skewing our results. 
