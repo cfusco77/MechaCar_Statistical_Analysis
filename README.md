@@ -18,7 +18,8 @@ In the summary output, each Pr(>|t|) value represents the probability that each 
 The r-squared (r2) value is also known as the coefficient of determination and represents how well the regression model approximates real-world data points.
 From our linear regression model, the r-squared value is 0.71, which means that roughly 71% of the variablilty of our dependent variable (MPG) is explained using this linear model.
 
-Deliverable 2: Summary Statistics on Suspension Coils
+## Summary Statistics on Suspension Coils
+n this dataset, the weight capacities of multiple suspension coils were tested to determine if the manufacturing process is consistent across production lots. The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Based on the total_summary statistics, MechaCart is in compliance with suspension coil manufactoring guidlines. The overall vraiance is 62.3, far below 100. However, when we look at the manufactoring statistics by Lot, we see Lot 3 is responsible for most of the variance in the overall summary. Lot 3 is sitting above regulation with a variance of 170. MechaCar should investigate the manufactoring practices of Lot 3 to see if they can identify why this Lot is performing so different from Lots 1 & 2. 
 
 Deliverable 3: T-Test on Suspension Coils
 
