@@ -27,12 +27,14 @@ The r-squared (r2) value is also known as the coefficient of determination and r
 From our linear regression model, the r-squared value is 0.71, which means that roughly 71% of the variablilty of our dependent variable (MPG) is explained using this linear model.
 
 ## Summary Statistics on Suspension Coils
-In this dataset, the weight capacities of multiple suspension coils were tested to determine if the manufacturing process is consistent across production lots. The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Based on the total_summary statistics, MechaCart is in compliance with suspension coil manufactoring guidlines. The overall vraiance is 62.3, far below 100. However, when we look at the manufactoring statistics by Lot, we see Lot 3 is responsible for most of the variance in the overall summary. Lot 3 is sitting above regulation with a variance of 170. MechaCar should investigate the manufactoring practices of Lot 3 to see if they can identify why this Lot is performing so different from Lots 1 & 2. 
+In this dataset, the weight capacities of multiple suspension coils were tested to determine if the manufacturing process is consistent across production lots. The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Based on the total_summary statistics, MechaCart is in compliance with suspension coil manufactoring guidlines. The overall variance is 62.3, far below 100. However, when we look at the manufactoring statistics by Lot, we see Lot 3 is responsible for most of the variance in the overall summary. Lot 3 is sitting above regulation with a variance of 170. MechaCar should investigate the manufactoring practices of Lot 3 to see if they can identify why this lot is performing so differently from Lots 1 & 2. 
 
 ![Total_Summary](https://github.com/cfusco77/MechaCar_Statistical_Analysis/blob/main/Resources/total_summary.png) 
 ![Lots_summary](https://github.com/cfusco77/MechaCar_Statistical_Analysis/blob/main/Resources/lot_summary.png) 
 
 ## T-Tests on Suspension Coils
+Next we performed  t-tests to determine if all manufacturing lots and each lot individually are statistically different from the population mean of 1,500 pounds per square inch.
+
 Ho : There is no statistical difference between the observed sample mean and its presumed population mean.
 Ha : There is a statistical difference between the observed sample mean and its presumed population mean.
 
@@ -43,9 +45,9 @@ Assumptions:
 4. The sample size is reasonably large. Generally speaking, this means that the sample data distribution should be similar to its population data distribution.
 5. The variance of the input data should be very similar.
 
-The t-test for all manufactoring lots resuled in a p-value of .06. Assuming our significance level was the common 0.05 percent, our p-value is above our significance level. Therefore, we do not have sufficient evidence to reject the null hypothesis, and we would state that the sample mean is not statistically different from its presumed population mean. 
+The t-test for all manufactoring lots combined resulted in a p-value of .06. Assuming our significance level was the common 0.05 percent, our p-value is above our significance level. Therefore, we do not have sufficient evidence to reject the null hypothesis, and we would state that the sample mean is not statistically different from its presumed population mean. 
 
-When we perform t-tests by lot we reach the same conclusion for Lots 1 and 2 with p-values of 1 and .6, respectively. However Lot 3's t-test resulted in a p-value of .04, below our significance3 leverl. Therefore we are unable to reject the null hypothesis and must conclude that the mean of Lot 3 is statistically different from the population mean. 
+When we perform t-tests by lot we reach the same conclusion for Lots 1 and 2 with p-values of 1 and .6, respectively. However Lot 3's t-test resulted in a p-value of .04, below our significance3 level. Therefore we are unable to reject the null hypothesis and conclude that the mean of Lot 3 is statistically different from the population mean. 
 
 ![OverallTTest](https://github.com/cfusco77/MechaCar_Statistical_Analysis/blob/main/Resources/Overall_TTest.png)
 ![Lots123_TTests](https://github.com/cfusco77/MechaCar_Statistical_Analysis/blob/main/Resources/Lots1%2C2%2C3_TTests.png)
